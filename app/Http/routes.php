@@ -22,3 +22,5 @@ Route::get('welcome', function () {
 Route::get('about', 'PageController@about');
 
 Route::get('contact', 'PageController@contact');
+
+Route::get('offereds/{offered}', 'OfferedController@show');
