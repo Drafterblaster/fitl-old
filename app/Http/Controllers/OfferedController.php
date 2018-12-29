@@ -48,10 +48,9 @@ class OfferedController extends Controller
      */
     public function show($id)
     {
-        echo $id;
-        exit;
-        
-        return view('offereds/show');
+        $data = array();
+        $data['the_id'] = $id;
+        return view('offereds/show', $data);
     }
 
     /**
